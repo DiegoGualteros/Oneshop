@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registro de Usuarios</title>
+<link rel="stylesheet" type="text/css" href="css/estilo_form.css">
+<link rel="stylesheet" type="text/css" href="css/estilo_form.css"><br>
+
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body class="reg1">
+	<h1>Formulario de Registro de Usuarios</h1>
+<form action="LOGIN.HTML"> 
+<label>Tipo de id</label> <br>
+<select name="t_doc">
+	<option value="CC"> Cedula de Ciudadania </option>
+	<option value="CE"> Cedula de Extranjeria </option>
+	<option value="TI"> Tarjeta de Identidad </option>
+	<option value="NIT"> NIT </option> 
+</select> <br>
+
+<label> id de usuario</label><br>
+<input type="number" name="id_usu" required><br>
+<label>Primer Nombre</label><br>
+<input type="text" name="p_nom" required><br>
+<label>Segundo Nombre</label><br>
+<input type="text" name="s_nom"><br>
+<label>Primer apellido</label><br>
+<input type="text" name="p_apell" required><br>
+<label>Segundo apellido</label><br>
+<input type="text" name="s_apell"><br>
+<label>Genero</label><br>
+<input type="radio" name="genero"checked>Femenino
+<input type="radio" name="genero">Masculino
+<input type="radio" name="genero">Otro <br>
+
+<div class="fin">
+	<input type="submit" value="Ingresar"><br>
+
+	<input type="button" onclick="history.back()" name="volver atrás" value="volver atrás">
+</div>
+</form>
+</body>
+</html>
